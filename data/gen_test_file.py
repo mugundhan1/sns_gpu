@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 fs = 1.25e6
 ts = 1/fs
-Npts = 4096*4096
+Npts = 1024*1024
 tmax = Npts*ts
 tax = np.linspace(0,tmax-ts,Npts)
 sig = np.float32(np.sin(2*np.pi*100e3*tax))
